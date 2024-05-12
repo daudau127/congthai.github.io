@@ -1,0 +1,445 @@
+* {box-sizing: border-box;}
+#sidebar {
+    background-color: #173451;
+    width: 300px;
+    height: 100vh;
+    margin: 0;
+    position: fixed;
+    z-index: 10;
+}
+body {
+    margin: 0;
+}
+
+.profile {
+    text-align: center;
+}
+
+
+.profile-img {
+    width: 120px;
+
+    border: solid 8px yellow;
+    border-radius: 50%;
+
+}
+
+.profile h1 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+
+.profile a {
+    color: #fcbf16;
+}
+
+.profile .social-links {
+    margin-top: 10px;
+}
+
+.profile .social-links a {
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+}
+.img-kmin {
+    width: 100%;
+    align-self: flex-end;
+    padding-bottom: 0;
+    padding-top: 55PX;
+}
+a {
+    color: white;
+    text-decoration: none;
+
+}
+ul {
+    list-style-type: none;
+}
+li {
+    padding: 10px 30px;
+}
+
+.navbar a, .navbar i {
+    color: #d0d1dd
+
+}
+
+nav a:hover {
+    background-color: red;
+}
+.navbar a {
+    font-size: 15px;
+}
+.navbar i {
+    font-size: 24px;
+    margin-right: 8px;
+}
+.icon {
+    padding: 5px;
+    margin: 5px;
+}
+.icon:hover {
+    background-color: white;
+}
+
+#hero {
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    background-image: url(Img/anh_nen.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    display: flex;
+    padding-left: 300px;
+}
+
+#hero .text {
+    color: white;
+}
+.text {
+    text-align: center;
+}
+#hero .text h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+#hero .text p {
+    font-size: 26px;
+    margin: 0;
+    border-bottom: solid 4px yellow ;
+    border-width: 3;
+    padding-bottom: 4px;
+    padding-right: 0;
+}
+.head {
+font-weight: bold; 
+color: #173451;
+padding-bottom: 10px;
+display: block;
+}
+      
+.head::after {
+display: block;
+position: relative;
+content: "";
+background: #fcbf16;
+width: 50px;
+height: 3px;
+margin-top: 10px;
+}
+#main {
+    padding-left: 300px;
+}
+#main>div {
+    padding: 3% ;
+    margin: 0;
+}
+
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.italic {
+    font-style: italic;
+}
+.col-sm-8 h3 {
+    color: #173451;
+}
+#facts .count-box i{
+    font-size: 44px;
+    color: #fcbf16;
+    padding-bottom: 6px;
+}
+#facts .count-box {
+    padding: 30px;
+}
+
+#facts .count-box span{
+    font-size: 48px;
+}
+.course {
+    flex: 20%;
+    margin: 0;
+    justify-content: space-around;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.count-box {
+    display: flex;
+}
+.count-box i {
+    margin-right: 10px;
+    padding: 0;
+}
+
+
+@media(max-width: 800px) {
+    li {
+        flex: 100%;
+        flex-wrap: wrap;
+    }
+    #sidebar {
+        flex: 100%;
+    } 
+    #hero {
+        flex: 100%;
+    }
+    #facts {
+        flex: 100%;
+    }
+    .container {
+        flex-wrap: wrap;
+    }
+    .par {
+        flex: 100%;
+    }
+    .course {
+        width: 40%;
+    }
+    .box__img {
+        flex: 40%;
+    }
+    .item {
+        flex: 50%;
+        flex-wrap: wrap;
+        margin-left: 300px;
+        overflow: hidden;
+    }
+    #resume {
+        margin-top: 200px;
+    }
+
+}
+.content p {
+    color: #173451;
+}
+
+
+.Skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+}
+  
+
+
+
+.box__img {
+display: grid;
+grid-auto-columns: 1fr;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+gap: 10px 20px;
+grid-template-areas:
+    ". ."
+    ". ."
+    ". .";
+justify-items: stretch;
+width: 700px;
+height: 100px;
+margin-top: 20px;
+}
+
+.item {
+display: flex;
+flex-direction: column;
+flex: 1;
+}
+
+.item__title {
+font-size: 15px;
+font-weight: 300px;
+font-weight: bold;
+}
+
+.process-row-1 {
+    width: 100%;
+    background: #E6E6FA;
+    height: 12px;
+    margin-top: 6px;
+    }
+
+.process-row-1::after {
+    display: block;
+    position: relative;
+    content: "";
+    width: 35%;
+    height: 12px;
+    background: red;
+}
+.process-row-2 {
+    width: 100%;
+    background: #E6E6FA;
+    height: 12px;
+    margin-top: 6px;
+    }
+    
+.process-row-2::after {
+    display: block;
+    position: relative;
+    content: "";
+    width: 10%;
+    height: 12px;
+    background: red;
+}
+.process-row-3 {
+    width: 100%;
+    background: #E6E6FA;
+    height: 12px;
+    margin-top: 6px;
+    }
+    
+.process-row-3::after {
+    display: block;
+    position: relative;
+    content: "";
+    width: 20%;
+    height: 12px;
+    background: red;
+}
+.process-row-4 {
+    width: 100%;
+    background: #E6E6FA;
+    height: 12px;
+    margin-top: 6px;
+    }
+    
+.process-row-4::after {
+    display: block;
+    position: relative;
+    content: "";
+    width: 50%;
+    height: 12px;
+    background: red;
+}
+.process-row-5 {
+    width: 100%;
+    background: #E6E6FA;
+    height: 12px;
+    margin-top: 6px;
+    }
+    
+.process-row-5::after {
+    display: block;
+    position: relative;
+    content: "";
+    width: 30%;
+    height: 12px;
+    background: red;
+}
+.process-row-6 {
+    width: 100%;
+    background: #E6E6FA;
+    height: 12px;
+    margin-top: 6px;
+    }
+    
+.process-row-6::after {
+    display: block;
+    position: relative;
+    content: "";
+    width: 5%;
+    height: 12px;
+    background: red;
+}
+#resume {
+    padding-left: 2%;
+    padding-top: 60px;
+    margin-left: 300px;
+}
+
+ol li {
+    font-style: italic;
+    padding: 0;
+    font-weight: bold;
+}
+#portfolio {
+    margin-left: 300px;
+    padding-left: 2%;
+}
+
+.photo-portfolio {
+    width: 90%;
+    margin: 5px;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.item-img {
+    flex: 33%;
+}
+.item-img:hover middle{
+    background-color: #f1f1f1;
+}
+
+
+/* edit */
+.item-img {
+    position: relative;
+    width: 200px; /* Kích thước ban đầu của hình ảnh */
+    height: 200px; /* Kích thước ban đầu của hình ảnh */
+    overflow: hidden; /* Ẩn phần bên ngoài của hình ảnh */
+    cursor: pointer; /* Đổi con trỏ chuột thành biểu tượng tay khi rê chuột qua */
+}
+  
+.item-img img {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%; /* Kích thước của hình ảnh sẽ là 100% chiều rộng của phần tử container */
+height: auto; /* Chiều cao tự động điều chỉnh theo tỉ lệ */
+transition: transform 0.3s ease; /* Tạo hiệu ứng chuyển động mượt mà */
+}
+
+/* Thay đổi kích thước của hình ảnh khi rê chuột qua */
+.item-img:hover img {
+transform: scale(1.1); /* Phóng to hình ảnh lên 110% khi rê chuột qua */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+#footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    margin: 0px 0px 0px 300px;
+    overflow: hidden;  
+    height: 50px;
+}
+footer > a {
+    color: white;
+}
+a.hover_footer:hover {
+    color: red;
+}
+.hover_footer {
+    text-decoration: none;
+}
